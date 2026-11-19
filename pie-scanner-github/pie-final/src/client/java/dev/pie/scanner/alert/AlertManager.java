@@ -53,7 +53,7 @@ public final class AlertManager {
             bannerUntilMs = now + 5000;
         }
         if (cfg.soundEnabled && cfg.soundVolumePercent > 0) {
-            mc.getSoundManager().play(SimpleSoundInstance.forUI(cfg.alarmSound.holder(), 1.0f, cfg.soundVolumePercent / 100f));
+            mc.getSoundManager().play(SimpleSoundInstance.forUI(cfg.alarmSound.holder().value(), 1.0f, cfg.soundVolumePercent / 100f));
         }
     }
 
