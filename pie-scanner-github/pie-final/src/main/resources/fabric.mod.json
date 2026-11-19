@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "pie_scanner",
+	"version": "${version}",
+	"name": "Pie Chart Scanner & Alert System",
+	"description": "Wertet die F3-Performance-Pie-Charts aus und warnt bei auffaelligen Block-/Entity-Kategorien.",
+	"authors": ["you"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.pie.scanner.PieScannerMod"]
+	},
+	"mixins": [
+		{ "config": "pie_scanner.mixins.json", "environment": "client" }
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
